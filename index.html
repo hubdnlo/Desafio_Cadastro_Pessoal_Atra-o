@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.: Cadastro :.</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <img src="assets/imagens/logo.png" alt="">
+        <div id="cabecalho">
+            | Somos gente que move gente! Vem ser Itaú!
+        </div>
+    </header>
+
+
+    <!--<fieldset> Linha de contorno-->
+    <div id='tituloDestaque'>
+        Vamos lá! Inicie com seu cadastro
+    </div>
+    <fieldset>
+        <form class="card">
+            <!--Label = rótulos. Strong deixa em negrito-->
+            <div class="container">
+                <div class="row">
+                    <div class="grupo">
+                        <label for="inputNome"> Nome completo *</b></label><br>
+                        <input type="text" id="inputNome" required maxlength="70" minlength="2"
+                            placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="grupo">
+                        <label for="dataNascimento"> Data de Nascimento *</b></label><br>
+                        <input type="date" id="dataNascimento" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grupo">
+                        <label for="inputSexo"> Sexo</b></label><br>
+                        <select name="opcoes" id="sexo">
+
+                            <option disabled="disabled" selected="selected">--Selecione</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Prefiro não dizer</option>
+
+                        </select> <br><br>
+                    </div>
+                    <div class="grupo">
+                        <label for="inputEmail"> Email</b></label><br>
+                        <input type="email" id="inputEmail" placeholder="Digite seu email"> <br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grupo">
+                        <label for="inputCPF"> CPF * <span id="result"> </span></b></label><br>
+                        <!-- o span aqui eh vazio pq ele espera a funcao de CPF ser 
+                        executada para mostrar o icone verde ou vermelho, true ou false -->
+                        <input type="text" id="inputCPF" onblur="validacao()" required maxlength="11"
+                            placeholder="Somente números">
+                        <!-- a funcao onblur significa que sempre que o usuario clicar no campo CPF e sair, ele vai executar toda a funcao validacao() 
+                        e ai ele vera se o resultado do valor digitado eh true ou false -->
+                    </div>
+                    <div class="grupo">
+                        <label for="inputRG"> RG</b></label><br>
+                        <input type="text" id="inputRG" placeholder="Somente números">
+                        <!--Tem número mínimo e máximo?-->
+                    </div>
+                </div>
+
+                <p>Dados de Endereço</p>
+                <div class="linha">
+                    <!--Linha divisoria-->
+
+                </div>
+                <div class="row">
+                    <div class="grupo">
+                        <label for="inputEndereco"> Endereco *</b></label><br>
+                        <input type="text" id="inputEndereco" required maxlength="40" minlength="2"
+                            placeholder="Digite seu endereço">
+                    </div>
+                    <div class="grupo">
+                        <label for="inputNumero"> Número *</b></label><br>
+                        <input type="text" id="inputNumero" required maxlength="10" minlength="1" placeholder="Nº">
+                        <!--incluso limite máximo, p/ o usuário não incluir, neste campo, dados que são do campo de complemento.
+                    -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grupo">
+                        <label for="inputComplemento"> Complemento</b></label><br>
+                        <input type="text" id="inputComplemento" placeholder="Digite o complemento, se houver"> <br><br>
+                    </div>
+                    <div class="grupo">
+                        <label for="inputBairro"> Bairro</b></label><br>
+                        <input type="text" id="inputBairro" placeholder="Digite seu bairro">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grupo">
+                        <label for="inputCidade"> Cidade</b></label><br>
+                        <input type="text" id="inputCidade" placeholder="Digite sua cidade">
+                    </div>
+                    <div class="grupo">
+                        <label for="inputEstado"> Estado</b></label><br>
+                        <select name="opcoes" id="estado">
+
+                            <option disabled="disabled" selected="selected">--Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+
+                        </select> <br><br>
+                    </div>
+                </div>
+                <div class="grupo">
+                    <label for="inputCEP"> CEP *</b></label><br>
+                    <input type="text" id="inputCEP" required maxlength="8" placeholder="Somente números"><br><br>
+                </div>
+                <div class="row">
+                    <div class="grupo">
+                        <label for="inputTelefoneFixo"> Telefone Fixo com DDD</b></label><br>
+                        <input type="text" id="inputCodAreaFixo" minlength="2" maxlength="3" placeholder="DDD">
+                        <input type="text" id="inputTelefoneFixo" maxlength="9" minlength="8"
+                            placeholder="Somente números">
+                    </div>
+                    <div class="grupo">
+                        <label for="inputTelefoneCelular"> Telefone Celular com DDD *</b></label><br>
+                        <input type="text" id="inputCodAreaCel" minlength="2" maxlength="3" placeholder="DDD">
+                        <input type="text" id="inputTelefoneCelular" required maxlength="9" minlength="8"
+                            placeholder="Somente números"> <br><br>
+                    </div>
+                </div>
+                <div class="botao">
+                    <button type="submit" onclick="enviado()">Enviar</button>
+                    <!-- Funcao onclick, ao clicar ele executa determinada acao, nesse caso o alert-->
+                </div>
+                <div class="obrigatorio">
+                    Campos com ( * ) preenchimentos obrigatórios
+                </div> <br>
+            </div>
+        </form>
+    </fieldset>
+
+    <footer>
+        Desenvolvido por Danilo Trindade &copy<br>
+
+    </footer>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
