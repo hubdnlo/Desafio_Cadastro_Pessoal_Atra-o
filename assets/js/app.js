@@ -1,8 +1,17 @@
 function isValidCPF(cpf) { 
 	console.log(cpf.length);
 	if (
-    	cpf.length != 11 // se O CPF for diferente de 11 digitos, sera falso
-    	
+    	cpf.length != 11 ||// se O CPF for diferente de 11 digitos, sera falso
+        cpf == "00000000000" || // regra para nao validar CPF com 11 digitos iguais // inicio
+        cpf == "11111111111" ||
+        cpf == "22222222222" || // o || significa "ou"
+        cpf == "33333333333" ||
+        cpf == "44444444444" ||
+        cpf == "55555555555" ||
+        cpf == "66666666666" ||
+        cpf == "77777777777" ||
+        cpf == "88888888888" ||
+        cpf == "99999999999"    // regra para nao validar CPF com 11 digitos iguais /. fim
 	) {
     	return false;
 	} else { // condicao para verificar se o CPF eh verdadeiro ou return true
