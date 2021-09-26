@@ -25,19 +25,19 @@
         Vamos lá! Inicie com seu cadastro
     </div>
     <fieldset>
-        <form class="card">
+        <form class="card" onSubmit="return enviardados()" name="dados">
             <!--Label = rótulos. Strong deixa em negrito-->
             <div class="container">
                 <div class="row">
                     <div class="grupo">
                         <label for="inputNome"> Nome completo *</b></label><br>
-                        <input type="text" id="inputNome" required maxlength="70" minlength="2"
-                            placeholder="Digite seu nome completo">
+                        <input type="text" id="inputNome"  maxlength="70" minlength="2"
+                            placeholder="Digite seu nome completo" required>
                     </div>
 
                     <div class="grupo">
-                        <label for="dataNascimento"> Data de Nascimento *</b></label><br>
-                        <input type="date" id="dataNascimento" required>
+                        <label for="dataNascimento"> Data de Nascimento </b></label><br>
+                        <input type="date" id="dataNascimento" >
                     </div>
                 </div>
                 <div class="row">
@@ -54,7 +54,7 @@
                     </div>
                     <div class="grupo">
                         <label for="inputEmail"> Email</b></label><br>
-                        <input type="email" id="inputEmail" placeholder="Digite seu email"> <br><br>
+                        <input type="email" id="inputEmail" placeholder="Digite seu email" name="tx_email"> <br><br>
                     </div>
                 </div>
                 <div class="row">
@@ -62,7 +62,7 @@
                         <label for="inputCPF"> CPF * <span id="result"> </span></b></label><br>
                         <!-- o span aqui eh vazio pq ele espera a funcao de CPF ser 
                         executada para mostrar o icone verde ou vermelho, true ou false -->
-                        <input type="text" id="inputCPF" onblur="validacao()" required maxlength="11"
+                        <input type="text" id="inputCPF" onblur="validacao()"  maxlength="11"
                             placeholder="Somente números">
                         <!-- a funcao onblur significa que sempre que o usuario clicar no campo CPF e sair, ele vai executar toda a funcao validacao() 
                         e ai ele vera se o resultado do valor digitado eh true ou false -->
@@ -82,12 +82,12 @@
                 <div class="row">
                     <div class="grupo">
                         <label for="inputEndereco"> Endereco *</b></label><br>
-                        <input type="text" id="inputEndereco" required maxlength="40" minlength="2"
-                            placeholder="Digite seu endereço">
+                        <input type="text" id="inputEndereco"  maxlength="40" minlength="2"
+                            placeholder="Digite seu endereço" name="tx_endereco" required>
                     </div>
                     <div class="grupo">
                         <label for="inputNumero"> Número *</b></label><br>
-                        <input type="text" id="inputNumero" required maxlength="10" minlength="1" placeholder="Nº">
+                        <input type="text" id="inputNumero" name="tx_numero" required  maxlength="10" minlength="1" placeholder="Nº">
                         <!--incluso limite máximo, p/ o usuário não incluir, neste campo, dados que são do campo de complemento.
                     -->
                     </div>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="grupo">
                     <label for="inputCEP"> CEP *</b></label><br>
-                    <input type="text" id="inputCEP" required maxlength="8" placeholder="Somente números"><br><br>
+                    <input type="text" id="inputCEP" name="tx_cep" required  maxlength="8" placeholder="Somente números"><br><br>
                 </div>
                 <div class="row">
                     <div class="grupo">
@@ -158,14 +158,14 @@
                     <div class="grupo">
                         <label for="inputTelefoneCelular"> Telefone Celular com DDD *</b></label><br>
                         <input type="text" id="inputCodAreaCel" minlength="2" maxlength="3" placeholder="DDD">
-                        <input type="text" id="inputTelefoneCelular" required maxlength="9" minlength="8"
-                            placeholder="Somente números"> <br><br>
+                        <input type="text" id="inputTelefoneCelular"  maxlength="9" minlength="8"
+                          name="tx_celular"  placeholder="Somente números" required > <br><br>
                     </div>
                 </div>
-                <div class="botao">
-                    <button type="submit" onclick="enviado()">Enviar</button>
+              
+                    <button type="submit">Enviar</button>
                     <!-- Funcao onclick, ao clicar ele executa determinada acao, nesse caso o alert-->
-                </div>
+            
                 <div class="obrigatorio">
                     Campos com ( * ) preenchimentos obrigatórios
                 </div> <br>

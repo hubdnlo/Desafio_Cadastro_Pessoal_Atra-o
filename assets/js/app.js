@@ -68,11 +68,3 @@ function validacao(){
 	}
 
 }
-
-// funcao para mostrar "formulario de abertura de conta enviado"
-function enviado() {
-   alert("Formulario enviado com sucesso!") // funcao onclick no botao enviar, se a pessoa clica ele aparece o alerta
-}
-
-
-
