@@ -3,180 +3,181 @@
 
 /* Cadastro */
 
-*
-{
+* {
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: #706a66;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-
-body{
-    background-color: #706a66;
-    font-family: Arial, Helvetica, sans-serif;
+body, button, p, input, select, textarea, #cabecalho, #tituloDestaque
+{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    color: white;
-    font-size: 35px;
-    display: flex;
-  }
+  color: white;
+  font-size: 35px;
+  display: flex;
+}
 
 h2 {
   color: white;
-  font-size: 22;
+  font-size: 22px;
   font-family: "Poppins", sans-serif;
   margin-bottom: 10px;
   text-align: center;
 }
 
-p{
-    color: white;
-    font-weight: 700;
-    margin-top: 20px;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+p {
+  color: white;
+  font-weight: 700;
+  margin-top: 20px;
 }
 
 
-#cabecalho
+#cabecalho {
+  margin-top: -47px;
+  margin-left: 220px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+p, #cabecalho
 {
-    margin-top: -47px;
-    margin-left: 220px;
-    font-size: 25px;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    }
+  font-size: 25px;
+}
 
-header{
-    width: 100%;
-    height: 60px;
-    background: #ec7000;
-    margin-bottom: 50px;
+header {
+  width: 100%;
+  height: 60px;
+  background: #ec7000;
+  margin-bottom: 50px;
 }
-img{
-    background-repeat: no-repeat;
-    width: 40px;
-    background-size: contain;
-    margin: 10px;
-    margin-left: 150px;
+
+img {
+  background-repeat: no-repeat;
+  width: 40px;
+  background-size: contain;
+  margin: 10px;
+  margin-left: 150px;
 }
-hr{
+
+hr {
   width: 100%;
   height: 2px;
 }
 
-fieldset{
-    margin-top: 30px;
- 
-    width: 80%;
-    margin: auto ;
-    background-color: #ec7000;
-    border:none;
+fieldset {
+  margin-top: 30px;
+  width: 80%;
+  margin: auto;
+  background-color: #ec7000;
+  border: none;
 }
 
-#tituloDestaque{
-    color: #ffffff;
-    font-weight: 500;
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background: #003499;   
-    width: 80%;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 0px;
-   
-}
-
-label{
-    color: white;
-    font-size: 20px;
-}
-
-
-.linha{
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    height: 2px;
-    background-color: #ffffff;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-
-
-.container{
-   margin-top: 20px;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
+#tituloDestaque {
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #003499;
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 0px;
 
 }
-.row{
+
+label {
+  color: white;
+  font-size: 20px;
+}
+
+.linha {
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.container {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.row {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.grupo{
-    display: block;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 5px;
+
+.grupo {
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5px;
 }
 
-input
-{
+input {
   width: 300px;
   height: 5px;
   border-radius: 5px;
   padding: 10px;
   border: none;
   margin-top: 5px;
-
 }
-input[type = email]{
+
+input[type=email] {
   width: 425px;
 }
-select{
-width: 195px;
-height: 25px;
-border: none;
-border-radius: 5px;
-margin-top: 5px;
 
+select {
+  width: 195px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
-#inputEndereco{
+#inputEndereco {
   width: 500px;
   margin-right: 35px;
 }
 
-#inputNumero{
-margin-left: 20px;
-width: 40px;
+#inputNumero {
+  margin-left: 20px;
+  width: 40px;
 }
 
-#estado{
+#estado {
   width: 320px;
 }
 
-#inputCodAreaFixo, #inputCodAreaCel{
+#inputCodAreaFixo,
+#inputCodAreaCel {
   width: 40px;
   margin-right: 5px;
 }
 
-#inputTelefoneFixo, #inputTelefoneCelular{
+#inputTelefoneFixo,
+#inputTelefoneCelular {
   width: 230px;
 }
 
-button
-{
+button {
   background-color: #003499;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 15px;
@@ -188,20 +189,18 @@ button
   margin-top: 40px;
 }
 
-button:hover
-{
+button:hover {
   background-color: rgb(146, 146, 255);
-  color: white;
   cursor: pointer;
 }
 
-.obrigatorio{
+.obrigatorio {
   color: #ffffff;
   text-align: start;
   padding-left: 20px;
 }
 
-footer{
+footer {
   padding-top: 10px;
   text-align: center;
   width: 100%;
@@ -210,5 +209,3 @@ footer{
   color: #ffffff;
   margin-top: 40px;
 }
-
-

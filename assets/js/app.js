@@ -49,21 +49,21 @@ function isValidCPF(cpf) {
 function validacao(){
 	console.log("Funcao de validacao")
 
-	var cpf = document.getElementById('inputCPF').value; // variavel CPF recebeu o id inputCPF( que esta dentro no inpunt no html) o value eh o valor digitado
+	const cpf = dados.inputCPF.value; // variavel CPF recebeu o id inputCPF( que esta dentro no inpunt no html) o value eh o valor digitado
 
-	var resultadoValidacao = isValidCPF(cpf) // aqui a variavel recebeu o resultado da funcao que comeca na linha 1, ele recebe true ou false
+	const resultadoValidacao = isValidCPF(cpf) // aqui a variavel recebeu o resultado da funcao que comeca na linha 1, ele recebe true ou false
 
 	if (resultadoValidacao)   { // se CPF digitado for valido ele executa essa condicao, e aparece icone verde que esta num span do lado do label do CPF
-    	var element = document.getElementById('result'); // variavel elemento recebeu o span com o ID result( veja no lado do label do CPF) 
+    	const element = document.getElementById('result'); // variavel elemento recebeu o span com o ID result( veja no lado do label do CPF) 
     	element.innerHTML =  '<i class="fas fa-check-circle"></i>' 
-    	var colorText = document.getElementById('result').style.color = "#53ff3cf3"; // variavel feita para receber o icone e mudar a cor para verde
+    	const colorText = document.getElementById('result').style.color = "#53ff3cf3"; // variavel feita para receber o icone e mudar a cor para verde
 	} else {
-    	var element = document.getElementById('result');
+    	const element = document.getElementById('result');
     	element.innerHTML = '<i class="fas fa-exclamation-triangle"></i>'// variavel elemento recebeu o span com o ID result( veja no lado do label do CPF) 
-    	var colorText = document.getElementById('result').style.color = "#f00000f3"; // variavel feita para receber o icone e mudar a cor para vermelho
+    	const colorText = document.getElementById('result').style.color = "#f00000f3"; // variavel feita para receber o icone e mudar a cor para vermelho
         
-        // A funcao setTimout eh uma funcao que espera algum intervalo para ser executada, no caso aquu foi de 1s
-		setTimeout( () => { alert("CPF Invalido, confira o numero digitado!"); }, 1000); /// quantidade de tempo 1000 = 1segundo, ele espera aparecer o icone vermelho e depois de 1s aparece o alert
+    // A funcao setTimout eh uma funcao que espera algum intervalo para ser executada, no caso aquu foi de 1s
+		alert("CPF Invalido, confira o numero digitado!"); /// quantidade de tempo 1000 = 1segundo, ele espera aparecer o icone vermelho e depois de 1s aparece o alert
 
 	}
 
