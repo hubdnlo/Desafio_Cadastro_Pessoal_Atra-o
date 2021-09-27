@@ -10,7 +10,7 @@
  </a>
 </p>
 
-- [Desafio Cadastro Pessoal - Formação Tech](#desafio-cadastro-pessoal---formação-itaú-tech)
+- [Desafio Cadastro Pessoal - Formação Itaú Tech](#desafio-cadastro-pessoal---formação-itaú-tech)
     - [Desenvolvedor](#desenvolvedor)
     - [Descrição pessoal](#descrição-pessoal)
     - [Objetivo deste projeto](#objetivo-deste-projeto)
