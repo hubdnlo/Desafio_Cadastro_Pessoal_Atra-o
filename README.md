@@ -12,11 +12,11 @@
 
 - [Desafio Cadastro Pessoal - Formação Tech](#desafio-cadastro-pessoal---formação-tech)
     - [Desenvolvedor](#desenvolvedor)
-    - [Descrição pessoal](#descrição)
-    - [Objetivo deste projeto](#objetivo)
+    - [Descrição-pessoal](#descrição)
+    - [Objetivo-deste-projeto](#objetivo)
     - [Site](#site)
-    - [Ferramenta utilizada](#ferramenta)
-    - [Linguagens aplicadas](#linguagens)
+    - [Ferramenta-utilizada](#ferramenta)
+    - [Linguagens-aplicadas](#linguagens)
     - [Referências](#referências)
     - [Agradecimentos](#agradecimentos)
 
